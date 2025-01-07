@@ -1,0 +1,243 @@
+.navbar-div {
+    background-color: #0F172B;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(8, 12, 56, 0.589);
+    z-index: 1;
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: 0;
+}
+
+
+.carousel-item .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-text {
+    font-size: 70px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 24%;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-our-rooms {
+    height: 60px;
+    width: 200px;
+    background-color: orange;
+    color: white;
+    margin-right: 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn-book-room {
+    height: 60px;
+    width: 200px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn-our-rooms:hover,
+.btn-book-roo:hover {
+    background-color: rgba(247, 184, 59, 0.848);
+}
+
+.content h5 {
+    position: relative;
+    text-align: center;
+}
+
+.content h5::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 26vh;
+    height: 1.5px;
+    width: 6.5vh;
+    background-color: orange;
+}
+
+.content h5::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 26vh;
+    height: 1.5px;
+    width: 6.5vh;
+    background-color: orange;
+}
+
+.text-animation {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideInDown {
+    animation-name: slideInDown;
+}
+
+
+.btn-animation {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+}
+
+.booking-container {
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 90%;
+}
+
+.about-section {
+    position: relative;
+}
+
+.about-section h6::after {
+    content: '';
+    position: absolute;
+    top: 2%;
+    transform: translateY(-50%);
+    left: 100px;
+    /* Adjusted for better visibility */
+    height: 3px;
+    width: 60px;
+    background-color: rgb(252, 184, 58);
+}
+
+.luxury-living-content {
+    background-color: #0F172B;
+}
+
+.h6-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.h6-wrapper h6 {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    padding-right: 5px;
+}
+
+.h6-wrapper::after {
+    content: "";
+    width: 6.5vh;
+    height: 2px;
+    background-color: #ffc107;
+    position: relative;
+    margin-left: 15px;
+    top: 50%;
+    transform: translateY(-56%);
+}
+
+.services-card {
+    height: 350px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-card:hover {
+    background-color: #ffc107;
+}
+
+.services-card:hover i,
+.services-card:hover h5,
+.services-card:hover p {
+    color: #FFFFFF !important;
+}
+
+
+.testimonial-img {
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(carousel-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 400px; */
+}
